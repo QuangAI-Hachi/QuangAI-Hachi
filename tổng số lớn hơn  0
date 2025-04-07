@@ -1,0 +1,8 @@
+def tong(A):
+    s=0
+    for k in A:
+        if k>0:
+            s=s+k 
+    return s 
+A=[1,434,5,454,35,-485]
+print(tong(A))
