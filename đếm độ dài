@@ -1,0 +1,9 @@
+def dem(xau, sep):
+    dai = xau.split(sep)  # Chia chuỗi theo dấu phân tách
+    return len(dai)  # Trả về số lượng phần tử sau khi chia
+
+# Chuỗi bạn muốn đếm từ
+xau = 'chào các b mình là lê ngọc quang'
+
+# Gọi hàm và truyền dấu cách làm phân tách
+print(dem(xau, ' '))  # Phân tách chuỗi theo dấu cách
