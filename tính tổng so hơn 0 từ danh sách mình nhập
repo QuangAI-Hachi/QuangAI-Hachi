@@ -1,0 +1,12 @@
+def tong(A):
+    s=0
+    for k in A:
+        if k>0:
+            s=s+k 
+    return s 
+n=int(input('nhập n số bạn muốn lặp'))
+A=[]
+for i in range(n):
+    nhap=int(input('nhập số'))
+    A.append(nhap)
+print (tong(A))
