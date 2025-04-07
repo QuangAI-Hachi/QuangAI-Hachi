@@ -1,0 +1,13 @@
+def tach(ten,c):
+    A=  ''.join(ten)
+    for i in range(len(A)):
+        if c<5:
+            A[i]=A[i].upper()
+        if c>5 and c<10:
+            A[i]=A[i].lower()
+        if c>10:
+            A[i]=A[i].title()
+    return A
+ten=['chaof','cacs ','ban']
+c=int(input('nhaapj so c'))
+print(tach(ten,c))
