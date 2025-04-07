@@ -1,0 +1,12 @@
+def tb(A,b):
+    s=0
+    for x in A:
+        if b==0:
+            s=s+x 
+        else:
+            if x>0:
+                s=s+x 
+    return s 
+A=[1,4,65,-8]
+b=int(input('nhập số b'))
+print (tb(A,b)) 
