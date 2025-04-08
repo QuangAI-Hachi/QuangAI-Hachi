@@ -1,0 +1,13 @@
+def tach(xau,c):
+    A=xau.split()
+    for k in range(len(A)):
+        if c==0:
+            A[k]=A[k].upper()
+        if c==1:
+            A[k]=A[k].lower()
+        if c==2:
+            A[k]=A[k].title()
+    return A 
+xau=input('nhập xâu bạn muốn')
+c=int(input('nhập số'))
+print(tach(xau,c))
