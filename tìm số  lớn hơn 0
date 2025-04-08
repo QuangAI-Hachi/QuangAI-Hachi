@@ -1,0 +1,15 @@
+def a(so, x):
+    B = []
+    for k in so:
+        if k >= x:
+            B.append(k)
+    return B
+
+# Nhập danh sách số, cách nhau bằng dấu cách
+
+so = input("Nhập các số bạn muốn (cách nhau bằng dấu cách): ")
+so = list(map(int, so.split()))  # Chuyển thành danh sách số nguyên
+
+x = int(input("Nhập số x: "))
+
+print("Các số lớn hơn hoặc bằng", x, "là:", a(so, x))
